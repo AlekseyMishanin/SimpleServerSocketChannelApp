@@ -28,7 +28,6 @@ public class Main {
                     SelectionKey key = selectionKeyIterator.next();
                     try {
                         if (key.isAcceptable()) {
-
                             SocketChannel channel = serverSocketChannel.accept();
                             if (channel != null) {
                                 // async channel
